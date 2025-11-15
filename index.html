@@ -2,20 +2,17 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Tablature Neptune</title>
+  <title>Tablature Neptune - Metamorphosis</title>
   <script src="https://cdn.jsdelivr.net/npm/@coderline/alphatab/dist/alphaTab.min.js"></script>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background:#111; color:#eee; }
-    #player { max-width: 1200px; margin: auto; padding: 20px; }
+    body { margin:0; padding:0; background:#111; color:#eee; font-family:sans-serif; }
+    #player { max-width:1200px; margin:auto; padding:20px; }
     .at-main { background:#222; border-radius:8px; padding:20px; }
-    .loading { text-align:center; padding:20px; }
   </style>
 </head>
-
 <body>
   <div id="player">
-    <h2>Tablature Neptune</h2>
-    <div class="loading">Chargement de la tablature…</div>
+    <h2>Tablature Neptune - Metamorphosis</h2>
     <div id="alphaTab"></div>
   </div>
 
@@ -23,7 +20,7 @@
     const at = new alphaTab.AlphaTabApi(
       document.getElementById("alphaTab"),
       {
-        file: "Tab_#1.02 Metamorphosis.gpx", // ⚠️ remplace par le nom exact de ton fichier
+        file: "Tab_#1.02 Metamorphosis.xml",
         player: { enablePlayer: true }
       }
     );
